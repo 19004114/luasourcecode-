@@ -39,15 +39,6 @@ for i = 1, #dshs do
     print("Ho ten: " .. dshs[i].name .. "\tDiem: " .. dshs[i].diem)
 end
 
-local t = ""
-local tbl = {}
-for i in string.gmatch(dshs[1].name, "%a+") do
-    table.insert(tbl,i)
-end
-for i = #tbl, #tbl do
-    t = tbl[i]
-end
-
 local tt = ""
 local td = 0
 for i = 1, #dshs do
