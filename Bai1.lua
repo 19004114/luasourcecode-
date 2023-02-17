@@ -15,10 +15,10 @@ local t = 0
 local tbc = 0
 
 for i = 1, #tbl do
-    if min > tbl[i] then
+    if tonumber(min) > tonumber(tbl[i]) then
         min = tbl[i]
     end
-    if max < tbl[i] then
+    if tonumber(max) < tonumber(tbl[i]) then
         max = tbl[i]
     end
     t = t + tbl[i]

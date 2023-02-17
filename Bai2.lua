@@ -13,6 +13,18 @@ function lines_from(file)
     end
     return lines
 end
+function find_name(name)
+    local t = ""
+    local tbl = {}
+    for i in string.gmatch(name, "%a+") do
+        table.insert(tbl,i)
+    end
+    for i = #tbl, #tbl do
+        t = tbl[i]
+    end
+    return t
+end
+
 
 local file = 'input2.txt'
 local lines = lines_from(file)
@@ -27,12 +39,21 @@ for i = 1, #dshs do
     print("Ho ten: " .. dshs[i].name .. "\tDiem: " .. dshs[i].diem)
 end
 
+local t = ""
+local tbl = {}
+for i in string.gmatch(dshs[1].name, "%a+") do
+    table.insert(tbl,i)
+end
+for i = #tbl, #tbl do
+    t = tbl[i]
+end
+
 local tt = ""
 local td = 0
 for i = 1, #dshs do
     if i ~= #dshs then
         for j = i + 1, #dshs do
-            if dshs[i].name > dshs[j].name then
+            if find_name(dshs[i].name) > find_name(dshs[j].name) then
                 tt = dshs[i].name
                 dshs[i].name = dshs[j].name
                 dshs[j].name = tt
@@ -64,7 +85,7 @@ end
 for i = 1, #dshs do
     if i ~= #dshs then
         for j = i + 1, #dshs do
-            if dshs[i].name > dshs[j].name then
+            if find_name(dshs[i].name) > find_name(dshs[j].name) then
                 tt = dshs[i].name
                 dshs[i].name = dshs[j].name
                 dshs[j].name = tt
