@@ -14,7 +14,7 @@ function lines_from(file)
     return lines
 end
 
-local file = 'input3.txt'
+local file = 'input2.txt'
 local lines = lines_from(file)
 local dshs = {}
 
@@ -50,7 +50,7 @@ for i = 1, #dshs do
     print("Ho ten: " .. dshs[i].name .. "\tDiem: " .. dshs[i].diem)
 end
 
-local file2 = 'input2.txt'
+local file2 = 'input3.txt'
 local lines2 = lines_from(file2)
 for i = 1, #lines2,2 do
     table.insert(dshs, {diem = lines2[i], name = lines2[i+1]} )
