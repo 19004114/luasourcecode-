@@ -22,7 +22,7 @@ function find_name(name)
     for i = #tbl, #tbl do
         t = tbl[i]
     end
-    return t
+    return string.lower(t)
 end
 
 
