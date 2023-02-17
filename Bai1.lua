@@ -1,12 +1,8 @@
 local tbl = {}
-local n = 0
 
-io.write("Nhap vao n phan tu: ")
-n = io.read()
-
-for i = 1, n do
-    io.write("Nhap so thuc thu " .. i .. ": ")
-    tbl[i] = io.read()
+local file = io.open("input.txt","r")
+for line in file:lines() do
+    table.insert(tbl,line)
 end
 
 for i = 1, #tbl do
@@ -28,7 +24,7 @@ for i = 1, #tbl do
     t = t + tbl[i]
 end
 
-tbc = t/n
+tbc = t/#tbl
 
 print("Phan tu nho nhat: " .. min)
 print("Phan tu lon nhat: " .. max)
