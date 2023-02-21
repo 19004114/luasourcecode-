@@ -16,44 +16,40 @@ tbA = {
     {name = "Ho Mach Don", soluong = 25, hsd = "", ti_le = 70.29},
 }
 
-function table.shallow_copy(t)
-    local t2 = {}
-    for k,v in pairs(t) do
-      t2[k] = v
+function tbA:showItem()
+    for i = 1, getn(self) do
+        print("Ten Vat Pham: " .. self[i].name .. "\tSo luong: " .. self[i].soluong .. "\tHan Su Dung: " .. self[i].hsd .. "\tTi le: " .. self[i].ti_le)
     end
-    return t2
 end
 
-tbB = table.shallow_copy(tbA)
-table.insert(tbB, {name = "Long Thach - Ha", soluong = 1, hsd = "", ti_le = 1} )
-table.insert(tbB, {name = "Nhan 20 van Bac", soluong = 200000, hsd = "", ti_le = 0.3} )
+function tbA:getId()
+    return random(1,20)
+end
 
-Mod = {
-    item = function(tbl)
-        for i = 1, #tbl do
-            print("Ten Vat Pham: " .. tbl[i].name .. "\tSo luong: " .. tbl[i].soluong .. "\tHan Su Dung: " .. tbl[i].hsd .. "\tTi le: " .. tbl[i].ti_le)
+function tbA:getName(id)
+    for i = 1, getn(self) do
+        if id == i then
+            return self[i].name
         end
-    end,
+    end
+end
 
-    rand = function()
-        return math.random(1,20)
-    end,
-
-    CheckVP = function(id,tbl)
-        for i = 1, #tbl do
-            if id == i then
-                return tbl[i].name
-            end
+function tbA:getTL(id)
+    for i = 1, getn(self) do
+        if id == i then
+            return tonumber(self[i].ti_le)
         end
-    end,
+    end
+end
 
-    CheckTL = function(id,tbl)
-        for i = 1, #tbl do
-            if id == i then
-                return tbl[i].ti_le
-            end
+function tbA:showResult(name,ti_le)
+    if name == nil then
+        print("Chuc ban may man lan sau")
+    elseif name ~= nil then
+        if tonumber(ti_le) <= 0.01 then
+            print("Chuc mung dai hiep may man trung duoc vat pham " .. name)
+        elseif tonumber(ti_le) > 0.01 then
+            print("Nhan duoc vat pham " .. name)
         end
-    end,
-}
-
-return Mod
+    end
+end

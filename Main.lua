@@ -1,19 +1,11 @@
-local function Show(name, ti_le)
-    if name == nil then
-        print("Chuc ban may man lan sau")
-    elseif name ~= nil then
-        if tonumber(ti_le) <= 0.01 then
-            print("Chuc mung dai hiep may man trung duoc vat pham " .. name)
-        elseif tonumber(ti_le) > 0.01 then
-            print("Nhan duoc vat pham " .. name)
-        end
-    end
-end
+dofile("Define.lua")
 
-local mod = require("Define")
+tbB = tbA
+tinsert(tbB, {name = "Long Thach - Ha", soluong = 1, hsd = "", ti_le = 1} )
+tinsert(tbB, {name = "Nhan 20 van Bac", soluong = 200000, hsd = "", ti_le = 0.3} )
 
-mod.item(tbA)
+local idA = tbA:getId()
+tbA:showResult(tbA:getName(idA),tbA:getTL(idA))
 
-local id = mod.rand()
-Show(mod.CheckVP(id,tbA), mod.CheckTL(id,tbA))
-Show(mod.CheckVP(id,tbB), mod.CheckTL(id,tbB))
+local idB = tbB:getId()
+tbB:showResult(tbB:getName(idB),tbB:getTL(idB))
