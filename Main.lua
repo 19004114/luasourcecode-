@@ -1,11 +1,18 @@
 dofile("Define.lua")
 
-tbB = tbA
-tinsert(tbB, {name = "Long Thach - Ha", soluong = 1, hsd = "", ti_le = 1} )
-tinsert(tbB, {name = "Nhan 20 van Bac", soluong = 200000, hsd = "", ti_le = 0.3} )
+function TB:Main()
+    local idx = self:getId(self.A)
+    self:showResult(self.A,idx)
+end
 
-local idA = tbA:getId()
-tbA:showResult(tbA:getName(idA),tbA:getTL(idA))
+tbB = {}
 
-local idB = tbB:getId()
-tbB:showResult(tbB:getName(idB),tbB:getTL(idB))
+function tbB:Main()
+    self = TB:copy(TB)
+    tinsert(self.A, {name = "Long Thach - Ha", soluong = 1, hsd = "", ti_le = 1} )
+    tinsert(self.A, {name = "Nhan 20 van Bac", soluong = 200000, hsd = "", ti_le = 0.3} )
+    local idx = self:getId(self.A)
+    self:showResult(self.A,idx)
+end
+
+tbB:Main()
