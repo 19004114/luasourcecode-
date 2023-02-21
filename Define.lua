@@ -77,7 +77,7 @@ function TB:copy(tb)
     for i, v in tb do
         tbNew[i] = v
         if type(v) == "table" then
-            TB:copy(v
+            TB:copy(v)
         end
     end
     return tbNew
