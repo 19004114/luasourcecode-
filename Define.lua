@@ -76,13 +76,8 @@ function TB:copy(tb)
     local tbNew = {}
     for i, v in tb do
         tbNew[i] = v
-        local tbC = {}
-
         if type(v) == "table" then
-            for k, d in v do
-                tbC[k] = d
-            end
-            tbNew[i] = tbC
+            TB:copy(v)
         end
     end
     return tbNew
