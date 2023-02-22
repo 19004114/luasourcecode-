@@ -1,0 +1,3 @@
+﻿  Lua.cpp
+D:\C++\Lua\Lua\Lua.cpp(63,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Lua.vcxproj -> D:\C++\Lua\Debug\Lua.exe
