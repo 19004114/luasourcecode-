@@ -14,8 +14,8 @@ function Main()
     
     local tbl = {}
     
-    local fileO = openfile("input.txt","r")
-    local file = openfile("input.txt","r")
+    local fileO = openfile("D:\\luaex\\input.txt","r")
+    local file = openfile("D:\\luaex\\input.txt","r")
     local lines = getLines(fileO)
     
     for i = 1 , lines do
@@ -56,4 +56,3 @@ function Main()
         end
     end
 end
-Main()

@@ -21,10 +21,10 @@ function Main()
     
     local tbd = {}
     
-    local fileO = openfile("input2.txt","r")
-    local file = openfile("input2.txt","r")
-    local file2O = openfile("input3.txt","r")
-    local file2 = openfile("input3.txt","r")
+    local fileO = openfile("D:\\luaex\\input2.txt","r")
+    local file = openfile("D:\\luaex\\input2.txt","r")
+    local file2O = openfile("D:\\luaex\\input3.txt","r")
+    local file2 = openfile("D:\\luaex\\input3.txt","r")
     
     local lines = getLines(fileO)
     local lines2 = getLines(file2O)
@@ -101,4 +101,3 @@ function Main()
         print("Ho ten: " .. dshs[i].name .. "\tDiem: " .. dshs[i].diem)
     end
 end
-Main()

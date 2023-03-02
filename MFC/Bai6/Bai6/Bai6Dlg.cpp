@@ -14,7 +14,7 @@
 
 CBai6Dlg::CBai6Dlg(CWnd* pParent /*=NULL*/)
 	: CImgDialogBase( CBai6Dlg::IDD
-	, CUtility::GetModulePath() + _T("VLTK.png")
+	, CUtility::GetModulePath() + _T("VLTK2.jpg")
 	, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
