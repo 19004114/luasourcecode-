@@ -1,4 +1,4 @@
-// Bai6.h : main header file for the PROJECT_NAME application
+// Test.h : main header file for the PROJECT_NAME application
 //
 
 #pragma once
@@ -11,7 +11,7 @@
 
 
 // CBai6App:
-// See Bai6.cpp for the implementation of this class
+// See Test.cpp for the implementation of this class
 //
 
 class CBai6App : public CWinApp
@@ -22,6 +22,7 @@ public:
 // Overrides
 	public:
 	virtual BOOL InitInstance();
+	virtual int ExitInstance();
 
 // Implementation
 

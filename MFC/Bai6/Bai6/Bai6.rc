@@ -77,23 +77,40 @@ IDR_MAINFRAME           ICON                    "res\\Bai6.ico"
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "About Bai6"
-FONT 8, "MS Shell Dlg", 0, 0, 0x1
-BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
-    LTEXT           "Bai6, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2023",IDC_STATIC,42,26,114,8
-    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
-END
-
-IDD_BAI6_DIALOG DIALOGEX 0, 0, 554, 394
+IDD_BAI6_DIALOG DIALOGEX 0, 0, 397, 269
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,200,25,204,234
+    PUSHBUTTON      "",IDC_BUTTON1,238,206,56,29
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,23,0,207,234
+    PUSHBUTTON      "",IDC_BUTTON2,297,206,56,28
+    PUSHBUTTON      "",IDC_BUTTON3,239,181,115,23
+    PUSHBUTTON      "",IDC_BUTTON4,239,147,115,31
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Chap nhan",IDOK,74,154,50,14
+    PUSHBUTTON      "Mac dinh",IDCANCEL,182,154,50,14
+    GROUPBOX        "Che do hien thi",IDC_STATIC,7,7,300,71
+    CONTROL         "2D",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,23,25,10
+    CONTROL         "3D",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,21,42,25,10
+    CONTROL         "Anh sang dong",IDC_3D,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,61,64,10
+    CONTROL         "Toan man hinh",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,229,21,63,10
+    CONTROL         "Cua so",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,229,42,38,10
+    CONTROL         "Mo trinh duyet",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,229,61,63,10
+    GROUPBOX        "Thu muc hinh anh",IDC_STATIC,8,86,299,54
+    PUSHBUTTON      "...",IDC_BUTTON1,239,108,50,14
+    EDITTEXT        IDC_EDIT1,25,107,192,14,ES_AUTOHSCROLL
 END
 
 
@@ -144,12 +161,12 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO 
 BEGIN
-    IDD_ABOUTBOX, DIALOG
+    IDD_DIALOG1, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 163
+        RIGHTMARGIN, 309
         TOPMARGIN, 7
-        BOTTOMMARGIN, 55
+        BOTTOMMARGIN, 175
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -163,7 +180,7 @@ END
 IDD_BAI6_DIALOG DLGINIT
 BEGIN
     IDC_EXPLORER1, 0x376, 160, 0
-0x0000, 0x0000, 0x004c, 0x0000, 0x1fa0, 0x0000, 0x2746, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x2025, 0x0000, 0x2746, 0x0000, 0x0000, 
 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
 0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
 0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
@@ -181,21 +198,10 @@ END
 // PNG
 //
 
-IDB_PNG2                PNG                     "D:\\VLTK.png"
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Cursor
-//
-
-IDC_CURSOR1             CURSOR                  "res\\cursor1.cur"
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Accelerator
-//
-
-
+IDB_PNG1                PNG                     "res\\Fanpage.png"
+IDB_PNG2                PNG                     "res\\HuongDan.png"
+IDB_PNG3                PNG                     "res\\ThuLai.png"
+IDB_PNG4                PNG                     "res\\TuyChon.png"
 
 /////////////////////////////////////////////////////////////////////////////
 //

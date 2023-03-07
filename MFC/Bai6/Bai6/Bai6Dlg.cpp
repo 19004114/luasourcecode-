@@ -4,29 +4,60 @@
 #include "stdafx.h"
 #include "Bai6.h"
 #include "Bai6Dlg.h"
-#include "./Src/Utility.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
+
+// CAboutDlg dialog used for App About
+
+class CAboutDlg : public CDialog
+{
+public:
+	CAboutDlg();
+
+// Dialog Data
+	enum { IDD = IDD_ABOUTBOX };
+
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+
+// Implementation
+protected:
+	DECLARE_MESSAGE_MAP()
+};
+
+CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
+{
+}
+
+void CAboutDlg::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+}
+
+BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
+END_MESSAGE_MAP()
+
+
 // CBai6Dlg dialog
 
+
+
+
 CBai6Dlg::CBai6Dlg(CWnd* pParent /*=NULL*/)
-	: CImgDialogBase( CBai6Dlg::IDD
-	, CUtility::GetModulePath() + _T("VLTK2.jpg")
-	, pParent)
+	: CDialog(CBai6Dlg::IDD, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
 void CBai6Dlg::DoDataExchange(CDataExchange* pDX)
 {
-	CImgDialogBase::DoDataExchange(pDX);
-	DDX_Control(pDX, IDC_EXPLORER1, m_browser);
+	CDialog::DoDataExchange(pDX);
 }
 
-BEGIN_MESSAGE_MAP(CBai6Dlg, CImgDialogBase)
+BEGIN_MESSAGE_MAP(CBai6Dlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
@@ -38,14 +69,8 @@ END_MESSAGE_MAP()
 
 BOOL CBai6Dlg::OnInitDialog()
 {
-	CImgDialogBase::OnInitDialog();
+	CDialog::OnInitDialog();
 
-	m_browser.Navigate(L"http://launcher.game.zing.vn/vo-lam-mien-phi/launcher-news-062014.html", NULL, NULL, NULL, NULL);
-
-
-	
-	//SetWindowLong(m_hWnd, GWL_EXSTYLE, GetWindowLong(m_hWnd,GWL_EXSTYLE) ^ WS_EX_LAYERED);
-	//SetLayeredWindowAttributes( RGB(255,0,255), 0, LWA_COLORKEY);
 	// Add "About..." menu item to system menu.
 
 	// IDM_ABOUTBOX must be in the system command range.
@@ -76,7 +101,15 @@ BOOL CBai6Dlg::OnInitDialog()
 
 void CBai6Dlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
-
+	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
+	{
+		CAboutDlg dlgAbout;
+		dlgAbout.DoModal();
+	}
+	else
+	{
+		CDialog::OnSysCommand(nID, lParam);
+	}
 }
 
 // If you add a minimize button to your dialog, you will need the code below
@@ -104,7 +137,7 @@ void CBai6Dlg::OnPaint()
 	}
 	else
 	{
-		CImgDialogBase::OnPaint();
+		CDialog::OnPaint();
 	}
 }
 
@@ -115,43 +148,3 @@ HCURSOR CBai6Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-
-BOOL CBai6Dlg::PreTranslateMessage(MSG *pMsg)
-{
-	static bool mouse_down = false;
-     static CRect MainRect;
-     static CPoint point;
-     switch(pMsg->message)
-     {
-     case WM_LBUTTONDOWN:
-         //save current dialog’s rectangle
-         GetWindowRect(&MainRect);
-         //save current cursor coordinate
-         point = pMsg->pt;
-         ScreenToClient(&point);
-         
-         //change the sign
-         mouse_down = true;
-         break;
-     case WM_LBUTTONUP:
-         //stop the sign
-         mouse_down = false;
-         //gimme a standard cursor now!!
-         break;
-     case WM_MOUSEMOVE :
-         if(mouse_down)
-         {     
-              //finally, move the window
-              MoveWindow(    pMsg->pt.x - point.x,
-                  //count the relative position
-                       pMsg->pt.y - point.y,
-                       MainRect.Width(), 
-                     //if the width doesn’t change 
-                       MainRect.Height(),
-                     //if the height doesn’t change
-                       TRUE);
-         }
-     }
-     //The code ends here
-     return CImgDialogBase::PreTranslateMessage(pMsg);
-}

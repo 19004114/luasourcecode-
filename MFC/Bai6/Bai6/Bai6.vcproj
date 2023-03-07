@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="Bai6"
-	ProjectGUID="{D1EC2BBD-7D5B-4F6D-9760-61D70FEA57D5}"
+	ProjectGUID="{54391924-048E-4066-AF85-5FDEFEB3F8C9}"
 	RootNamespace="Bai6"
 	Keyword="MFCProj"
 	TargetFrameworkVersion="196613"
@@ -67,6 +67,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="lua4.lib lualib4.lib"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -190,11 +191,23 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Bai6Dlg.cpp"
+				RelativePath=".\explorer1.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\explorer1.cpp"
+				RelativePath=".\GdipButton.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SecondDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDlg.cpp"
 				>
 			</File>
 			<File
@@ -217,6 +230,22 @@
 					/>
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath=".\TranslucentDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentDlg.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentWnd.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Utility.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -232,11 +261,47 @@
 				>
 			</File>
 			<File
+				RelativePath=".\CGdiPlusBitmap.h"
+				>
+			</File>
+			<File
 				RelativePath=".\explorer1.h"
 				>
 			</File>
 			<File
+				RelativePath=".\GdipButton.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lauxlib.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lua.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lualib.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MemDC.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SecondDialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDlg.h"
 				>
 			</File>
 			<File
@@ -247,16 +312,28 @@
 				RelativePath=".\targetver.h"
 				>
 			</File>
+			<File
+				RelativePath=".\TranslucentDialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentWnd.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Utility.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
-			<File
-				RelativePath=".\background.png"
-				>
-			</File>
 			<File
 				RelativePath=".\res\Bai6.ico"
 				>
@@ -270,43 +347,19 @@
 				>
 			</File>
 			<File
-				RelativePath=".\res\cursor1.cur"
+				RelativePath=".\res\Fanpage.png"
 				>
 			</File>
 			<File
-				RelativePath=".\res\png1.png"
+				RelativePath=".\res\HuongDan.png"
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\..\VLTK.png"
-				>
-			</File>
-		</Filter>
-		<Filter
-			Name="Src"
-			>
-			<File
-				RelativePath=".\Src\background.png"
+				RelativePath=".\res\ThuLai.png"
 				>
 			</File>
 			<File
-				RelativePath=".\Src\GdiplusH.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Src\ImgDialogBase.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Src\ImgDialogBase.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Src\Utility.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Src\Utility.h"
+				RelativePath=".\res\TuyChon.png"
 				>
 			</File>
 		</Filter>

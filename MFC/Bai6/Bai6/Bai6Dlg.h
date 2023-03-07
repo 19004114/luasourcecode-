@@ -3,16 +3,12 @@
 
 #pragma once
 #include "afxwin.h"
-#include "afxcmn.h"
-#include "afxdtctl.h"
-
 #include "explorer1.h"
-
-#include "./Src/ImgDialogBase.h"
+#include "GdipButton.h"
 
 
 // CBai6Dlg dialog
-class CBai6Dlg : public CImgDialogBase
+class CBai6Dlg : public CDialog
 {
 // Construction
 public:
@@ -36,6 +32,6 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-	afx_msg BOOL PreTranslateMessage(MSG* pMsg);
+	CGdipButton btn_TuyChon;
 	CExplorer1 m_browser;
 };
