@@ -5,6 +5,7 @@
 #include "Launcher.h"
 #include "StandardDlg.h"
 #include "StandardDialog.h"
+#include "explorer1.h"
 
 // StandardDlg dialog
 
@@ -23,6 +24,7 @@ StandardDlg::~StandardDlg()
 void StandardDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CStandardDialog::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_EXPLORER1, m_browser);
 }
 
 
@@ -33,6 +35,8 @@ END_MESSAGE_MAP()
 BOOL StandardDlg::OnInitDialog()
 {
 	CStandardDialog::OnInitDialog();
+
+	m_browser.Navigate(L"http://launcher.game.zing.vn/vo-lam-mien-phi/launcher-news-062014.html", NULL, NULL, NULL, NULL);
 	
 	return TRUE;
 }

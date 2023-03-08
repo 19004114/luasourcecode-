@@ -2,6 +2,7 @@
 
 #include "StandardDialog.h"
 #include "afxwin.h"
+#include "explorer1.h"
 
 
 // StandardDlg dialog
@@ -23,4 +24,5 @@ protected:
 	virtual BOOL OnInitDialog();
 	DECLARE_MESSAGE_MAP()
 public:
+	CExplorer1 m_browser;
 };

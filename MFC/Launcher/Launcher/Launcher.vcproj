@@ -186,6 +186,10 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\explorer1.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Launcher.cpp"
 				>
 			</File>
@@ -239,6 +243,10 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\explorer1.h"
+				>
+			</File>
 			<File
 				RelativePath=".\Launcher.h"
 				>
@@ -315,6 +323,10 @@
 		<Global
 			Name="RESOURCE_FILE"
 			Value="Launcher.rc"
+		/>
+		<Global
+			Name="{8856F961-340A-11D0-A96B-00C04FD705A2}"
+			Value="CExplorer1"
 		/>
 	</Globals>
 </VisualStudioProject>
