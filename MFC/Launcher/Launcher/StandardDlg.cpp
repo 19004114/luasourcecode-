@@ -32,6 +32,8 @@ void StandardDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(StandardDlg, CStandardDialog)
+	ON_BN_CLICKED(IDC_BUTTON1, &StandardDlg::OnBnClickedButton1)
+	ON_BN_CLICKED(IDC_BUTTON3, &StandardDlg::OnBnClickedButton3)
 END_MESSAGE_MAP()
 
 
@@ -46,4 +48,14 @@ BOOL StandardDlg::OnInitDialog()
 	m_browser.Navigate(L"http://launcher.game.zing.vn/vo-lam-mien-phi/launcher-news-062014.html", NULL, NULL, NULL, NULL);
 	
 	return TRUE;
+}
+void StandardDlg::OnBnClickedButton1()
+{
+	SecondDialog dlg;
+	dlg.DoModal();
+}
+
+void StandardDlg::OnBnClickedButton3()
+{
+	EndDialog(0);
 }

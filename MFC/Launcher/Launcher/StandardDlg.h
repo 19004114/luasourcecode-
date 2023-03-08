@@ -4,6 +4,7 @@
 #include "afxwin.h"
 #include "explorer1.h"
 #include "GdipButton.h"
+#include "SecondDialog.h"
 
 
 // StandardDlg dialog
@@ -29,4 +30,6 @@ public:
 	CGdipButton btn_TuyChon;
 	CGdipButton btn_ThuLai;
 	CGdipButton btn_Thoat;
+	afx_msg void OnBnClickedButton1();
+	afx_msg void OnBnClickedButton3();
 };

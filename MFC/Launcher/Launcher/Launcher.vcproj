@@ -198,6 +198,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\SecondDialog.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\StandardDialog.cpp"
 				>
 			</File>
@@ -273,6 +277,10 @@
 			</File>
 			<File
 				RelativePath=".\Resource.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SecondDialog.h"
 				>
 			</File>
 			<File

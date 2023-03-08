@@ -105,6 +105,24 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 END
 
+IDD_DIALOG2 DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Che do hien thi",IDC_STATIC,8,7,300,70
+    GROUPBOX        "Static",IDC_STATIC,7,87,300,49
+    CONTROL         "2D",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,21,25,10
+    CONTROL         "3D",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,17,40,25,10
+    CONTROL         "Anh sang dong",IDC_3D,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,59,64,10
+    CONTROL         "Toan man hinh",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,223,23,63,10
+    CONTROL         "Cua so",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,223,41,38,10
+    CONTROL         "Mo trinh duyet",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,60,63,10
+    EDITTEXT        IDC_EDIT1,16,106,210,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON1,239,105,50,14
+    PUSHBUTTON      "Chap nhan",IDC_BUTTON2,71,153,50,14
+    PUSHBUTTON      "Mac dinh",IDC_BUTTON3,167,153,50,14
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
