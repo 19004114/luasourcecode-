@@ -88,12 +88,15 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
 END
 
-IDD_LAUNCHER_DIALOG DIALOGEX 0, 0, 415, 327
+IDD_LAUNCHER_DIALOG DIALOGEX 0, 0, 445, 336
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
 EXSTYLE WS_EX_APPWINDOW
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,103,82,206,235
+    PUSHBUTTON      "",IDC_BUTTON1,311,297,55,20
+    PUSHBUTTON      "",IDC_BUTTON2,372,298,55,20
+    PUSHBUTTON      "",IDC_BUTTON3,406,66,39,11
 END
 
 IDD_DIALOG1 DIALOGEX 0, 0, 418, 242
@@ -193,7 +196,10 @@ END
 // PNG
 //
 
+IDB_PNG1                PNG                     "res\\Option.png"
 IDB_BG                  PNG                     "res\\Screen_new.png"
+IDB_PNG2                PNG                     "res\\Resume.png"
+IDB_PNG3                PNG                     "res\\Exit.png"
 
 /////////////////////////////////////////////////////////////////////////////
 //

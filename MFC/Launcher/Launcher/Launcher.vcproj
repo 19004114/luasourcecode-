@@ -190,6 +190,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\GdipButton.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Launcher.cpp"
 				>
 			</File>
@@ -244,7 +248,15 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\CGdiPlusBitmap.h"
+				>
+			</File>
+			<File
 				RelativePath=".\explorer1.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GdipButton.h"
 				>
 			</File>
 			<File
@@ -253,6 +265,10 @@
 			</File>
 			<File
 				RelativePath=".\LauncherDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MemDC.h"
 				>
 			</File>
 			<File
@@ -298,6 +314,10 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
+				RelativePath=".\res\Exit.png"
+				>
+			</File>
+			<File
 				RelativePath=".\res\Launcher.ico"
 				>
 			</File>
@@ -307,6 +327,14 @@
 			</File>
 			<File
 				RelativePath=".\res\Launcher.rc2"
+				>
+			</File>
+			<File
+				RelativePath=".\res\Option.png"
+				>
+			</File>
+			<File
+				RelativePath=".\res\Resume.png"
 				>
 			</File>
 			<File

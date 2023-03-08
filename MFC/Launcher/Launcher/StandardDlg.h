@@ -3,6 +3,7 @@
 #include "StandardDialog.h"
 #include "afxwin.h"
 #include "explorer1.h"
+#include "GdipButton.h"
 
 
 // StandardDlg dialog
@@ -25,4 +26,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	CExplorer1 m_browser;
+	CGdipButton btn_TuyChon;
+	CGdipButton btn_ThuLai;
+	CGdipButton btn_Thoat;
 };
