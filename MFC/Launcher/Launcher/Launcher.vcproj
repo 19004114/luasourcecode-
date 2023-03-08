@@ -190,7 +190,11 @@
 				>
 			</File>
 			<File
-				RelativePath=".\LauncherDlg.cpp"
+				RelativePath=".\StandardDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDlg.cpp"
 				>
 			</File>
 			<File
@@ -213,6 +217,22 @@
 					/>
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath=".\TranslucentDialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentDlg.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentWnd.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Utility.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -232,11 +252,35 @@
 				>
 			</File>
 			<File
+				RelativePath=".\StandardDialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".\StandardDlg.h"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.h"
 				>
 			</File>
 			<File
 				RelativePath=".\targetver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentDialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentDlg.h"
+				>
+			</File>
+			<File
+				RelativePath=".\TranslucentWnd.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Utility.h"
 				>
 			</File>
 		</Filter>
@@ -257,6 +301,10 @@
 				RelativePath=".\res\Launcher.rc2"
 				>
 			</File>
+			<File
+				RelativePath=".\res\Screen_new.png"
+				>
+			</File>
 		</Filter>
 		<File
 			RelativePath=".\ReadMe.txt"
@@ -264,5 +312,9 @@
 		</File>
 	</Files>
 	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="Launcher.rc"
+		/>
 	</Globals>
 </VisualStudioProject>
