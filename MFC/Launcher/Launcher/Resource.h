@@ -9,12 +9,12 @@
 #define IDR_MAINFRAME                   128
 #define IDD_DIALOG1                     130
 #define IDD_DIALOG2                     137
-#define IDB_PNG4                        142
-#define IDB_EXIT                        143
-#define IDB_OPTION                      144
-#define IDB_PNG3                        145
-#define IDB_RESUME                      145
-#define IDB_BG                          146
+#define IDB_PNG1                        152
+#define IDB_PNG4                        152
+#define IDB_EXIT                        153
+#define IDB_OPTION                      154
+#define IDB_RESUME                      155
+#define IDB_BG                          156
 #define IDC_EXPLORER1                   1000
 #define IDC_BUTTON1                     1001
 #define IDC_BUTTON2                     1002
@@ -32,7 +32,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        147
+#define _APS_NEXT_RESOURCE_VALUE        157
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1012
 #define _APS_NEXT_SYMED_VALUE           101
