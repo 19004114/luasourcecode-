@@ -67,6 +67,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="lua.lib"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -147,6 +148,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="lua.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -272,6 +274,22 @@
 				>
 			</File>
 			<File
+				RelativePath=".\lauxlib.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lua.h"
+				>
+			</File>
+			<File
+				RelativePath=".\luadebug.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lualib.h"
+				>
+			</File>
+			<File
 				RelativePath=".\MemDC.h"
 				>
 			</File>
@@ -321,6 +339,10 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\res\DangNhap.png"
+				>
+			</File>
 			<File
 				RelativePath=".\res\Exit.png"
 				>

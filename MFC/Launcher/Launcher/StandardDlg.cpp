@@ -28,6 +28,7 @@ void StandardDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_BUTTON1, btn_TuyChon);
 	DDX_Control(pDX, IDC_BUTTON2, btn_ThuLai);
 	DDX_Control(pDX, IDC_BUTTON3, btn_Thoat);
+	DDX_Control(pDX, IDC_BUTTON4, btn_DangNhap);
 }
 
 
@@ -41,9 +42,10 @@ BOOL StandardDlg::OnInitDialog()
 {
 	CStandardDialog::OnInitDialog();
 
-	btn_TuyChon.LoadStdImage(IDB_PNG1, _T("PNG"));
-	btn_ThuLai.LoadStdImage(IDB_PNG2, _T("PNG"));
-	btn_Thoat.LoadStdImage(IDB_PNG3, _T("PNG"));
+	btn_TuyChon.LoadStdImage(IDB_OPTION, _T("PNG"));
+	btn_ThuLai.LoadStdImage(IDB_RESUME, _T("PNG"));
+	btn_Thoat.LoadStdImage(IDB_EXIT, _T("PNG"));
+	btn_DangNhap.LoadStdImage(IDB_PNG4, _T("PNG"));
 
 	m_browser.Navigate(L"http://launcher.game.zing.vn/vo-lam-mien-phi/launcher-news-062014.html", NULL, NULL, NULL, NULL);
 	

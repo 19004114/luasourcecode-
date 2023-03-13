@@ -5,6 +5,11 @@
 #include "Launcher.h"
 #include "SecondDialog.h"
 
+extern "C" {
+#include "lua.h"
+#include "lauxlib.h"
+#include "lualib.h"
+}
 
 // SecondDialog dialog
 
@@ -160,7 +165,26 @@ void SecondDialog::OnBnClickedRadio2()
     pBtn->EnableWindow(1);
 }
 
+int show(lua_State* L);
+int show(lua_State* L)
+{
+	MessageBox(NULL,_T("OK"),_T("Thong Bao"),MB_OK);
+	return 1;	
+}
+
 void SecondDialog::OnBnClickedButton2()
 {
+	CStringA s2( path );
+	const char* c = s2;
+	
+	lua_State* L = lua_open(0);
+    lua_baselibopen(L);
+    lua_strlibopen(L);
+    lua_pushcfunction(L, show);
+    lua_setglobal(L, "show");
+    lua_dofile(L, c);
+    lua_getglobal(L, "Main");
+    lua_call(L, 0, 0);
+	OnOK();
 	OnOK();
 }

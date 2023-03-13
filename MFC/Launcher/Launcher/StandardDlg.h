@@ -32,4 +32,5 @@ public:
 	CGdipButton btn_Thoat;
 	afx_msg void OnBnClickedButton1();
 	afx_msg void OnBnClickedButton3();
+	CGdipButton btn_DangNhap;
 };

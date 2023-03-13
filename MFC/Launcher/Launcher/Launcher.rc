@@ -97,6 +97,7 @@ BEGIN
     PUSHBUTTON      "",IDC_BUTTON1,311,297,55,20
     PUSHBUTTON      "",IDC_BUTTON2,372,298,55,20
     PUSHBUTTON      "",IDC_BUTTON3,406,66,39,11
+    PUSHBUTTON      "",IDC_BUTTON4,321,238,100,52
 END
 
 IDD_DIALOG1 DIALOGEX 0, 0, 418, 242
@@ -214,10 +215,11 @@ END
 // PNG
 //
 
-IDB_PNG1                PNG                     "res\\Option.png"
+IDB_PNG4                PNG                     "res\\DangNhap.png"
+IDB_EXIT                PNG                     "res\\Exit.png"
+IDB_OPTION              PNG                     "res\\Option.png"
+IDB_RESUME              PNG                     "res\\Resume.png"
 IDB_BG                  PNG                     "res\\Screen_new.png"
-IDB_PNG2                PNG                     "res\\Resume.png"
-IDB_PNG3                PNG                     "res\\Exit.png"
 
 /////////////////////////////////////////////////////////////////////////////
 //

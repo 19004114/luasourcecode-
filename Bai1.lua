@@ -56,3 +56,4 @@ function Main()
         end
     end
 end
+Main()
