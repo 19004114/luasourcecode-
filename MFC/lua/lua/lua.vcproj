@@ -19,7 +19,7 @@
 			Name="Debug|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="1"
 			CharacterSet="2"
 			>
 			<Tool
@@ -58,8 +58,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				GenerateDebugInformation="true"
-				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -166,219 +164,215 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath="..\..\src\lua\include\dump.c"
+				RelativePath=".\Resource\dump.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lapi.c"
+				RelativePath=".\Resource\lapi.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lapi.h"
+				RelativePath=".\Resource\lapi.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lauxlib.c"
+				RelativePath=".\Resource\lauxlib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lauxlib.h"
+				RelativePath=".\Resource\lauxlib.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lbaselib.c"
+				RelativePath=".\Resource\lbaselib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lcode.c"
+				RelativePath=".\Resource\lcode.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lcode.h"
+				RelativePath=".\Resource\lcode.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ldblib.c"
+				RelativePath=".\Resource\ldblib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ldebug.c"
+				RelativePath=".\Resource\ldebug.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ldebug.h"
+				RelativePath=".\Resource\ldebug.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ldo.c"
+				RelativePath=".\Resource\ldo.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ldo.h"
+				RelativePath=".\Resource\ldo.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lfunc.c"
+				RelativePath=".\Resource\lfunc.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lfunc.h"
+				RelativePath=".\Resource\lfunc.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lgc.c"
+				RelativePath=".\Resource\lgc.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lgc.h"
+				RelativePath=".\Resource\lgc.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\liolib.c"
+				RelativePath=".\Resource\liolib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\llex.c"
+				RelativePath=".\Resource\llex.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\llex.h"
+				RelativePath=".\Resource\llex.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\llimits.h"
+				RelativePath=".\Resource\llimits.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lmathlib.c"
+				RelativePath=".\Resource\lmathlib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lmem.c"
+				RelativePath=".\Resource\lmem.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lmem.h"
+				RelativePath=".\Resource\lmem.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lobject.c"
+				RelativePath=".\Resource\lobject.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lobject.h"
+				RelativePath=".\Resource\lobject.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lopcodes.h"
+				RelativePath=".\Resource\lopcodes.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lparser.c"
+				RelativePath=".\Resource\lparser.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lparser.h"
+				RelativePath=".\Resource\lparser.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lstate.c"
+				RelativePath=".\Resource\lstate.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lstate.h"
+				RelativePath=".\Resource\lstate.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lstring.c"
+				RelativePath=".\Resource\lstring.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lstring.h"
+				RelativePath=".\Resource\lstring.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lstrlib.c"
+				RelativePath=".\Resource\lstrlib.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ltable.c"
+				RelativePath=".\Resource\ltable.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ltable.h"
+				RelativePath=".\Resource\ltable.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ltests.c"
+				RelativePath=".\Resource\ltests.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ltm.c"
+				RelativePath=".\Resource\ltm.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\ltm.h"
+				RelativePath=".\Resource\ltm.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lua.c"
+				RelativePath=".\Resource\lua.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lua.h"
+				RelativePath=".\Resource\luac.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\luac.c"
+				RelativePath=".\Resource\luac.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\luac.h"
+				RelativePath=".\Resource\luadebug.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\luadebug.h"
+				RelativePath=".\Resource\lualib.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lualib.h"
+				RelativePath=".\Resource\lundump.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lundump.c"
+				RelativePath=".\Resource\lundump.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lundump.h"
+				RelativePath=".\Resource\lvm.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lvm.c"
+				RelativePath=".\Resource\lvm.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lvm.h"
+				RelativePath=".\Resource\lzio.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lzio.c"
+				RelativePath=".\Resource\lzio.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\lzio.h"
+				RelativePath=".\Resource\opt.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\opt.c"
+				RelativePath=".\Resource\print.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\lua\include\print.c"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\lua\include\print.h"
+				RelativePath=".\Resource\print.h"
 				>
 			</File>
 		</Filter>
