@@ -42,3 +42,4 @@
 
 #include <gdiplus.h>
 #pragma comment(lib, "gdiplus.lib")
+extern LONG g_fAbortDownload;

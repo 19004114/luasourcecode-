@@ -29,6 +29,7 @@ CLauncherApp::CLauncherApp()
 
 ULONG_PTR gdiplusToken;
 CLauncherApp theApp;
+LONG g_fAbortDownload;
 
 BOOL CLauncherApp::InitInstance()
 {
