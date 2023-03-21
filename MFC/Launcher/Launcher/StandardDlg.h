@@ -6,6 +6,7 @@
 #include "GdipButton.h"
 #include "SecondDialog.h"
 #include "afxcmn.h"
+#include "BtnST.h"
 
 
 // StandardDlg dialog
@@ -39,5 +40,5 @@ public:
 	CGdipButton btn_DangNhap;
 	afx_msg void OnBnClickedButton2();
 	CProgressCtrl m_progress;
-	CStatic m_Status;
+	CButtonST m_Status;
 };

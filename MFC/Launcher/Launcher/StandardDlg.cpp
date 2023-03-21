@@ -32,7 +32,7 @@ void StandardDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_BUTTON3, btn_Thoat);
 	DDX_Control(pDX, IDC_BUTTON4, btn_DangNhap);
 	DDX_Control(pDX, IDC_PROGRESS1, m_progress);
-	DDX_Control(pDX, IDC_Status, m_Status);
+	DDX_Control(pDX, IDC_BUTTON5, m_Status);
 }
 
 
@@ -47,6 +47,8 @@ BOOL StandardDlg::OnInitDialog()
 	CStandardDialog::OnInitDialog();
 
 	m_progress.SetRange ( 0, 100 );
+
+	m_Status.DrawTransparent(TRUE);
 
 	btn_TuyChon.LoadStdImage(IDB_OPTION, _T("PNG"));
 	btn_ThuLai.LoadStdImage(IDB_RESUME, _T("PNG"));

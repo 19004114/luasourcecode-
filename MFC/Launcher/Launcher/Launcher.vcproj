@@ -192,6 +192,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\BtnST.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\explorer1.cpp"
 				>
 			</File>
@@ -259,6 +263,10 @@
 			>
 			<File
 				RelativePath=".\BindStatusCallback.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BtnST.h"
 				>
 			</File>
 			<File
